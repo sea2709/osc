@@ -3,14 +3,13 @@ wp-config.php
 .htaccess
 
 # Ignore the wp-content directory
-# /wp-content
+/wp-content
 
 # Don’t ignore plugins dir, but ignore everything inside
-# !/wp-content/plugins
-# /wp-content/plugins/*
+!/wp-content/plugins
+/wp-content/plugins/*
 
 # Don’t ignore akismet plugin
-# !/wp-content/plugins/akismet
+!/wp-content/plugins/akismet
 
-# Ignore folder upload
-/wp-content/uploads
+
