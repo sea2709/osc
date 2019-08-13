@@ -1,0 +1,46 @@
+/*
+Theme Name:     MicrojobEngine Child
+Theme URI:      http://enginetheme.com/
+Description:    Child theme for the MicrojobEngine theme
+Author: 		EngineThemes Team
+Author URI: 	http://www.enginethemes.com
+Template:       microjobengine
+Version:        1.0.1
+*/
+
+/*.mje-main-wrapper #et-header .et-pull-top {*/
+    /*background: #2a394e;*/
+/*}*/
+
+.mje-main-wrapper #et-header .list-message .link-message i {
+    color: #dee0e6;
+}
+
+.mje-main-wrapper #et-header .link-post-services a {
+    color: #dee0e6;
+}
+
+.mje-main-wrapper #et-header .et-dropdown .avatar, .mje-main-wrapper  #et-header .et-dropdown i {
+    color: #dee0e6;
+}
+
+#footer .zoom-social-icons-list--no-labels .zoom-social_icons-list__item {
+    display: inline-block;
+}
+.mje-main-wrapper  #et-header .link-account ul li, .mje-main-wrapper  #et-header .link-account ul li .open-signin-modal, .mje-main-wrapper  #et-header .link-account ul li .open-signup-modal {
+    color: #dee0e6;
+}
+
+#et-nav .megamenu .nav {
+    display: flex;
+    justify-content: center;
+    float: none;
+}
+
+.compose-conversation .progress {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    right: 15px;
+    text-align: center;
+}

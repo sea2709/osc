@@ -1,0 +1,25 @@
+.table-wrapper .table-content table .payment-name.paypal-express-checkout img {
+    width: 90px;
+}
+
+.mje-ppec-button-checkout {
+    position: relative;
+}
+
+.payment-name.paypal-express-checkout img {
+    width: 90px;
+    margin-bottom: 10px;
+}
+.payment-name.paypal-express-checkout span {
+    display: block;
+}
+
+@media all and (min-width: 768px) {
+    .mje-ppec-button-checkout #paypal-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -20px;
+        margin-left: -76px;
+    }
+}

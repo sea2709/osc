@@ -1,0 +1,460 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MjE Recruits\n"
+"POT-Creation-Date: 2019-04-05 18:01+0700\n"
+"PO-Revision-Date: 2019-04-05 18:01+0700\n"
+"Last-Translator: \n"
+"Language-Team: EngineThemes <contact@enginethemes.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: vendor\n"
+"X-Poedit-SearchPathExcluded-2: .idea\n"
+"X-Poedit-SearchPathExcluded-3: .git\n"
+
+#: admin/admin.php:50 admin/admin.php:51
+msgid "Recruit"
+msgstr ""
+
+#: admin/admin.php:55
+msgid "An extension for MicrojobEngine"
+msgstr ""
+
+#: admin/admin.php:74
+msgid "General Settings"
+msgstr ""
+
+#: admin/admin.php:82
+msgid "General"
+msgstr ""
+
+#: admin/admin.php:92
+msgid "My Recruits Page"
+msgstr ""
+
+#: admin/admin.php:93
+msgid "Choose a page displayed as My Recruit Page"
+msgstr ""
+
+#: inc/ajax_hook.php:7
+msgid "Your offer has been submitted"
+msgstr ""
+
+#: inc/ajax_hook.php:124
+#, php-format
+msgid ""
+"Admin deducted %s from your available credit. Your current credit has been "
+"changed from %s to %s"
+msgstr ""
+
+#: inc/ajax_hook.php:146
+#, php-format
+msgid "There is a new offer on your  request: %s."
+msgstr ""
+
+#: inc/class-ae-post.php:117
+msgid "REJECTED"
+msgstr ""
+
+#: inc/class-ae-post.php:118
+msgid "ARCHIVED"
+msgstr ""
+
+#: inc/class-ae-post.php:119
+msgid "PENDING"
+msgstr ""
+
+#: inc/class-ae-post.php:120
+msgid "DRAFT"
+msgstr ""
+
+#: inc/class-ae-post.php:121
+msgid "ACTIVE"
+msgstr ""
+
+#: inc/class-ae-post.php:122
+msgid "TRASHED"
+msgstr ""
+
+#: inc/class-ae-post.php:275 inc/class-mje-request.php:177
+msgid "The ID already existed!"
+msgstr ""
+
+#: inc/class-ae-post.php:280 inc/class-mje-request.php:182
+msgid "You must login to submit listing."
+msgstr ""
+
+#: inc/class-ae-post.php:463
+msgid "Post not found!"
+msgstr ""
+
+#: inc/class-ae-post.php:468
+msgid "You can not edit other posts!"
+msgstr ""
+
+#: inc/class-ae-post.php:581
+msgid "You do not have permission to delete post."
+msgstr ""
+
+#: inc/class-ae-post.php:638
+msgid "Invalid method"
+msgstr ""
+
+#: inc/class-mje-offer.php:34 inc/class-mje-offer.php:69
+#: inc/class-mje-request.php:92
+msgid "Add New Offer"
+msgstr ""
+
+#: inc/class-mje-offer.php:35 inc/class-mje-offer.php:70
+#: inc/class-mje-request.php:93
+msgid "New Offer"
+msgstr ""
+
+#: inc/class-mje-offer.php:36 inc/class-mje-offer.php:71
+#: inc/class-mje-request.php:94
+msgid "Edit Offer"
+msgstr ""
+
+#: inc/class-mje-offer.php:37 inc/class-mje-offer.php:72
+#: inc/class-mje-request.php:95
+msgid "View Offer"
+msgstr ""
+
+#: inc/class-mje-offer.php:38 inc/class-mje-offer.php:73
+#: inc/class-mje-request.php:96
+msgid "All Offers"
+msgstr ""
+
+#: inc/class-mje-offer.php:39 inc/class-mje-offer.php:74
+#: inc/class-mje-request.php:97
+msgid "Search Offers"
+msgstr ""
+
+#: inc/class-mje-offer.php:40 inc/class-mje-offer.php:75
+msgid "Parent Offers:"
+msgstr ""
+
+#: inc/class-mje-offer.php:41 inc/class-mje-offer.php:76
+#: inc/class-mje-request.php:99
+msgid "No Offers found."
+msgstr ""
+
+#: inc/class-mje-offer.php:42 inc/class-mje-offer.php:77
+#: inc/class-mje-request.php:100
+msgid "No Offers found in Trash."
+msgstr ""
+
+#: inc/class-mje-offer.php:47 inc/class-mje-offer.php:82
+#: inc/class-mje-request.php:70 inc/class-mje-request.php:105
+msgid "Description."
+msgstr ""
+
+#: inc/class-mje-offer.php:111
+#, php-format
+msgid "%s used the service %s to submit an offer."
+msgstr ""
+
+#: inc/class-mje-offer.php:151
+msgid "Can not use twice times"
+msgstr ""
+
+#: inc/class-mje-offer.php:155
+msgid "Please select your service."
+msgstr ""
+
+#: inc/class-mje-offer.php:266
+msgid "SUBMIT YOUR OFFER"
+msgstr ""
+
+#: inc/class-mje-offer.php:267
+#, php-format
+msgid ""
+"Select the job you want to offer the user to purchase. To send a related "
+"offer, you need to <a href='%s'>'Post a service'</a> first, then user can "
+"view your order and make a custom order."
+msgstr ""
+
+#: inc/class-mje-offer.php:283
+msgid "Choose a your service"
+msgstr ""
+
+#: inc/class-mje-offer.php:291
+msgid "Submit"
+msgstr ""
+
+#: inc/class-mje-offer.php:292 inc/class-mje-offer.php:299
+msgid "Post a service"
+msgstr ""
+
+#: inc/class-mje-offer.php:310
+msgid ""
+"Please <a href=\"#\" class=\"signin-link open-signin-modal\">Signin</a> to "
+"submit an offer."
+msgstr ""
+
+#: inc/class-mje-offer.php:322
+msgid "<h4>This job is archived.</h4>"
+msgstr ""
+
+#: inc/class-mje-request-front.php:34
+msgid "Archive this post?"
+msgstr ""
+
+#: inc/class-mje-request-front.php:49 inc/class-mje-request-front.php:173
+#: inc/class-mje-request-front.php:487 inc/class-mje-request-front.php:507
+msgid "Recruit now"
+msgstr ""
+
+#: inc/class-mje-request-front.php:99
+#, php-format
+msgid "You don't have any recruitment. <a href= \"%s\">Recruit now</a> now."
+msgstr ""
+
+#: inc/class-mje-request-front.php:136
+msgid "Latest Recruitments"
+msgstr ""
+
+#: inc/class-mje-request-front.php:163
+msgid "There's no recruitment available at the moment. Recruit now."
+msgstr ""
+
+#: inc/class-mje-request-front.php:171
+msgid "View all Recruitments"
+msgstr ""
+
+#: inc/class-mje-request-front.php:186 inc/class-mje-request-front.php:190
+msgid "My Recruitments"
+msgstr ""
+
+#: inc/class-mje-request-front.php:231
+msgid "View Detail"
+msgstr ""
+
+#: inc/class-mje-request-front.php:240
+msgid "Title"
+msgstr ""
+
+#: inc/class-mje-request-front.php:242
+msgid "Date"
+msgstr ""
+
+#: inc/class-mje-request-front.php:245
+msgid "Budget"
+msgstr ""
+
+#: inc/class-mje-request-front.php:247
+msgid "Status"
+msgstr ""
+
+#: inc/class-mje-request-front.php:248
+msgid "Action"
+msgstr ""
+
+#: inc/class-mje-request-front.php:286
+msgid "There are no Requests found!"
+msgstr ""
+
+#: inc/class-mje-request-front.php:314 inc/class-mje-request.php:39
+#, php-format
+msgid "Posted %s"
+msgstr ""
+
+#: inc/class-mje-request-front.php:315
+#, php-format
+msgid "%f offers"
+msgstr ""
+
+#: inc/class-mje-request-front.php:341
+#, php-format
+msgid "%s OFFER(s)"
+msgstr ""
+
+#: inc/class-mje-request-front.php:354
+msgid "There is no offers."
+msgstr ""
+
+#: inc/class-mje-request-front.php:378 templates/aside-block.php:30
+msgid "Send custom order"
+msgstr ""
+
+#: inc/class-mje-request-front.php:472
+msgid "Load more"
+msgstr ""
+
+#: inc/class-mje-request-front.php:495
+msgid "Get your stuffs done from $5"
+msgstr ""
+
+#: inc/class-mje-request-front.php:517 inc/class-mje-request-front.php:522
+msgid "Recruit banner"
+msgstr ""
+
+#: inc/class-mje-request-front.php:536
+msgid "All Recruitments"
+msgstr ""
+
+#: inc/class-mje-request-front.php:572
+msgid "Sort by"
+msgstr ""
+
+#: inc/class-mje-request-front.php:574
+msgid "Newest"
+msgstr ""
+
+#: inc/class-mje-request-front.php:575
+msgid "Oldest"
+msgstr ""
+
+#: inc/class-mje-request-front.php:596
+msgid "Categories"
+msgstr ""
+
+#: inc/class-mje-request-front.php:600 inc/class-mje-request-front.php:695
+msgid "Tags"
+msgstr ""
+
+#: inc/class-mje-request-front.php:644
+msgid "Recruitment name"
+msgstr ""
+
+#: inc/class-mje-request-front.php:657
+#, php-format
+msgid "Your budget (%s)"
+msgstr ""
+
+#: inc/class-mje-request-front.php:666
+msgid "Time of delivery (Day)"
+msgstr ""
+
+#: inc/class-mje-request-front.php:672
+msgid "Category"
+msgstr ""
+
+#: inc/class-mje-request-front.php:675
+msgid "Choose categories"
+msgstr ""
+
+#: inc/class-mje-request-front.php:689 single-recruit.php:62
+msgid "Description"
+msgstr ""
+
+#: inc/class-mje-request-front.php:696
+msgid "Enter microjob tags"
+msgstr ""
+
+#: inc/class-mje-request-front.php:701
+msgid "SAVE"
+msgstr ""
+
+#: inc/class-mje-request-front.php:702
+msgid "DISCARD"
+msgstr ""
+
+#: inc/class-mje-request.php:38
+#, php-format
+msgid "%s offers"
+msgstr ""
+
+#: inc/class-mje-request.php:57
+msgid "Add New Recruitment"
+msgstr ""
+
+#: inc/class-mje-request.php:58
+msgid "New recruitment"
+msgstr ""
+
+#: inc/class-mje-request.php:59
+msgid "Edit"
+msgstr ""
+
+#: inc/class-mje-request.php:60
+msgid "View recruitment"
+msgstr ""
+
+#: inc/class-mje-request.php:61
+msgid "All recruitments"
+msgstr ""
+
+#: inc/class-mje-request.php:62
+msgid "Search recruitments"
+msgstr ""
+
+#: inc/class-mje-request.php:63
+msgid "Parent recruitment"
+msgstr ""
+
+#: inc/class-mje-request.php:64
+msgid "No Recruitment post found."
+msgstr ""
+
+#: inc/class-mje-request.php:65
+msgid "No recruitment found in the trashh."
+msgstr ""
+
+#: inc/class-mje-request.php:98
+msgid "Parent Offer"
+msgstr ""
+
+#: inc/functions.php:50 inc/functions.php:65
+msgid "Tags:"
+msgstr ""
+
+#: single-recruit.php:45
+msgid "Last modified: "
+msgstr ""
+
+#: templates/aside-block.php:40
+msgid "Opening Message"
+msgstr ""
+
+#: templates/aside-block.php:53
+msgid "Show more"
+msgstr ""
+
+#: templates/aside-block.php:113
+msgid "From "
+msgstr ""
+
+#: templates/aside-block.php:122
+msgid "Languages "
+msgstr ""
+
+#: templates/aside-block.php:140
+msgid "Bio"
+msgstr ""
+
+#: templates/aside-block.php:153
+msgid "Payment info"
+msgstr ""
+
+#: templates/aside-block.php:160
+msgid "Billing info"
+msgstr ""
+
+#: templates/aside-block.php:163
+msgid "Business full name"
+msgstr ""
+
+#: templates/aside-block.php:167
+msgid "Full Address"
+msgstr ""
+
+#: templates/aside-block.php:171
+msgid "Country"
+msgstr ""
+
+#: templates/aside-block.php:178
+msgid "VAT Number (USA)"
+msgstr ""
+
+#: templates/aside-block.php:192
+msgid "View my profile"
+msgstr ""

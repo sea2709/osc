@@ -1,15 +1,42 @@
-# Ignore wp-config.php and .htaccess
+# Ignore wp-config.php and .htaccess and .idea
 wp-config.php
 .htaccess
+.idea
 
 # Ignore the wp-content directory
-/wp-content
+/wp-content/*
 
 # Don’t ignore plugins dir, but ignore everything inside
 !/wp-content/plugins
 /wp-content/plugins/*
 
-# Don’t ignore akismet plugin
-!/wp-content/plugins/akismet
+# Don’t ignore mje-extra-fees plugin
+!/wp-content/plugins/mje-extra-fees
+
+# Don’t ignore mje-featured plugin
+!/wp-content/plugins/mje-featured
+
+# Don’t ignore mje-paypal-express-checkout plugin
+!/wp-content/plugins/mje-paypal-express-checkout
+
+# Don’t ignore mje-recruit plugin
+!/wp-content/plugins/mje-recruit
+
+# Don’t ignore mje-stripe plugin
+!/wp-content/plugins/mje-stripe
+
+# Don’t ignore sfwd-lms plugin
+!/wp-content/plugins/sfwd-lms
+
+# Don’t ignore themes dir, but ignore everything inside
+!/wp-content/themes
+/wp-content/themes/*
+
+# Don’t ignore microjobengine theme
+!/wp-content/themes/microjobengine
+
+# Don’t ignore microjobengine-child theme
+!/wp-content/themes/microjobengine-child
+
 
 

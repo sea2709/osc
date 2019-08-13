@@ -7,7 +7,10 @@
     ],
     "require": {
         "wpackagist-plugin/akismet": "3.1.1",
-        "wpackagist-theme/evolve": "*"
+        "wpackagist-theme/evolve": "*",
+        "wpackagist-plugin/social-icons-widget-by-wpzoom": "*",
+        "wpackagist-plugin/taxonomy-terms-order": "*",
+        "wpackagist-plugin/wp-mail-smtp": "*"
     },
     "config": {
 	"secure-http": false

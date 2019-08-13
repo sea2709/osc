@@ -1,0 +1,124 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MjE PayPal Express Checkout\n"
+"POT-Creation-Date: 2017-04-17 13:51+0700\n"
+"PO-Revision-Date: 2017-04-17 13:51+0700\n"
+"Last-Translator: \n"
+"Language-Team: EngineThemes <contact@enginethemes.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: vendor\n"
+"X-Poedit-SearchPathExcluded-2: .idea\n"
+"X-Poedit-SearchPathExcluded-3: .git\n"
+
+#: inc/class-mje-ppec-admin.php:51 inc/class-mje-ppec-admin.php:59
+#: inc/gateway/class-mje-ppec-gateway.php:47
+#: inc/gateway/class-mje-ppec-gateway.php:57
+msgid "PayPal Express Checkout"
+msgstr ""
+
+#: inc/class-mje-ppec-admin.php:62
+msgid "Allow customers to conveniently checkout directly with PayPal."
+msgstr ""
+
+#: inc/class-mje-ppec-admin.php:69
+msgid "Enable/Disable"
+msgstr ""
+
+#: inc/class-mje-ppec-admin.php:70
+msgid "Enabling this will activate PayPal Express Checkout payment gateway."
+msgstr ""
+
+#: inc/class-mje-ppec-admin.php:78
+msgid "API Credentials"
+msgstr ""
+
+#: inc/class-mje-ppec-admin.php:79
+msgid ""
+"Visit <a href=\"https://developer.paypal.com/developer/applications/create\" "
+"target=\"_blank\">https://developer.paypal.com/developer/applications/"
+"create</a> to create an app to receive REST API credentials for testing and "
+"live transactions."
+msgstr ""
+
+#: inc/class-mje-ppec-admin.php:86
+msgid "Sandbox client id"
+msgstr ""
+
+#: inc/class-mje-ppec-admin.php:94
+msgid "Sandbox secret"
+msgstr ""
+
+#: inc/class-mje-ppec-admin.php:102
+msgid "Live client id"
+msgstr ""
+
+#: inc/class-mje-ppec-admin.php:110
+msgid "Live secret"
+msgstr ""
+
+#: inc/class-mje-ppec-admin.php:121
+msgid "Invoice prefix"
+msgstr ""
+
+#: inc/class-mje-ppec-admin.php:122
+msgid ""
+"Enter the unique prefix for your invoice numbers if your PayPal account is "
+"used for multiple websites, since PayPal won’t allow orders with the same "
+"invoice number."
+msgstr ""
+
+#: inc/class-mje-ppec-admin.php:131
+msgid "Button styles"
+msgstr ""
+
+#: inc/class-mje-ppec-admin.php:132
+msgid ""
+"Use the button style parameters to define the color, shape, and size of the "
+"button."
+msgstr ""
+
+#: inc/class-mje-ppec-admin.php:139
+msgid "Button shape"
+msgstr ""
+
+#: inc/class-mje-ppec-admin.php:143
+msgid "Rectangle"
+msgstr ""
+
+#: inc/class-mje-ppec-admin.php:144
+msgid "Pill"
+msgstr ""
+
+#: inc/class-mje-ppec-admin.php:151
+msgid "Button color"
+msgstr ""
+
+#: inc/class-mje-ppec-admin.php:155
+msgid "Gold"
+msgstr ""
+
+#: inc/class-mje-ppec-admin.php:156
+msgid "Blue"
+msgstr ""
+
+#: inc/class-mje-ppec-admin.php:157
+msgid "Silver"
+msgstr ""
+
+#: inc/gateway/class-mje-ppec-visitor.php:23
+msgid "Missing API key"
+msgstr ""
+
+#: inc/gateway/class-mje-ppec-visitor.php:60
+msgid "An error occurred while making the payment!"
+msgstr ""
