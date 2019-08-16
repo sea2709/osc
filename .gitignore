@@ -2,6 +2,9 @@
 wp-config.php
 .htaccess
 .idea
+.user.ini
+/error_log
+phpinfo.php
 .DS_Store
 
 # Ignore the wp-content directory

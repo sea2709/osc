@@ -134,7 +134,9 @@
         },
         "dist": {
             "type": "zip",
-            "url": "https://downloads.wordpress.org/plugin/akismet.3.1.1.zip"
+            "url": "https://downloads.wordpress.org/plugin/akismet.3.1.1.zip",
+            "reference": null,
+            "shasum": null
         },
         "require": {
             "composer/installers": "~1.0"
@@ -144,9 +146,31 @@
         "homepage": "https://wordpress.org/plugins/akismet/"
     },
     {
+        "name": "wpackagist-theme/evolve",
+        "version": "4.1.4",
+        "version_normalized": "4.1.4.0",
+        "source": {
+            "type": "svn",
+            "url": "https://themes.svn.wordpress.org/evolve/",
+            "reference": "4.1.4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/theme/evolve.4.1.4.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-theme",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/themes/evolve/"
+    },
+    {
         "name": "wpackagist-plugin/social-icons-widget-by-wpzoom",
-        "version": "3.3.0",
-        "version_normalized": "3.3.0.0",
+        "version": "3.3.2",
+        "version_normalized": "3.3.2.0",
         "source": {
             "type": "svn",
             "url": "https://plugins.svn.wordpress.org/social-icons-widget-by-wpzoom/",
@@ -154,7 +178,9 @@
         },
         "dist": {
             "type": "zip",
-            "url": "https://downloads.wordpress.org/plugin/social-icons-widget-by-wpzoom.zip?timestamp=1558458795"
+            "url": "https://downloads.wordpress.org/plugin/social-icons-widget-by-wpzoom.zip?timestamp=1565686721",
+            "reference": null,
+            "shasum": null
         },
         "require": {
             "composer/installers": "~1.0"
@@ -174,7 +200,9 @@
         },
         "dist": {
             "type": "zip",
-            "url": "https://downloads.wordpress.org/plugin/taxonomy-terms-order.1.5.7.zip"
+            "url": "https://downloads.wordpress.org/plugin/taxonomy-terms-order.1.5.7.zip",
+            "reference": null,
+            "shasum": null
         },
         "require": {
             "composer/installers": "~1.0"
@@ -194,7 +222,9 @@
         },
         "dist": {
             "type": "zip",
-            "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.1.5.2.zip"
+            "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.1.5.2.zip",
+            "reference": null,
+            "shasum": null
         },
         "require": {
             "composer/installers": "~1.0"
@@ -202,25 +232,5 @@
         "type": "wordpress-plugin",
         "installation-source": "dist",
         "homepage": "https://wordpress.org/plugins/wp-mail-smtp/"
-    },
-    {
-        "name": "wpackagist-theme/evolve",
-        "version": "4.1.4",
-        "version_normalized": "4.1.4.0",
-        "source": {
-            "type": "svn",
-            "url": "https://themes.svn.wordpress.org/evolve/",
-            "reference": "4.1.4"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://downloads.wordpress.org/theme/evolve.4.1.4.zip"
-        },
-        "require": {
-            "composer/installers": "~1.0"
-        },
-        "type": "wordpress-theme",
-        "installation-source": "dist",
-        "homepage": "https://wordpress.org/themes/evolve/"
     }
 ]
