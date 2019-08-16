@@ -230,3 +230,104 @@ $s3Params = [
 
 wp_enqueue_script( 'my_js_library', get_stylesheet_directory_uri() . '/assets/js/custom.js', array('jquery'));
 wp_localize_script( 'my_js_library', 'OSC_S3', $s3Params );
+
+if (!function_exists('mje_show_filter_categories')) {
+    /**
+     * Show categories filter on search result
+     * @param array $taxonomies
+     * @return void
+     * @since 1.0
+     * @package MicrojobEngine
+     * @category File Functions
+     * @author Tat Thien
+     */
+    function mje_show_filter_categories($taxonomy = 'category', $args = array(), $current = "", $custom_filter = true) {
+        $terms = get_terms($taxonomy, $args);
+        $search_item = get_query_var('s');
+        ?>
+        <div class="dropdown">
+            <button class="button-dropdown-menu" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Categories
+                <span class="caret"></span>
+            </button>
+            <ul id="accordion" class="accordion <?php echo ($custom_filter) ? 'custom-filter-query' : '' ?> dropdown-menu" aria-labelledby="dLabel">
+                <?php
+                if (!is_category() && !is_singular(array('post', 'page'))) {
+                    if (is_search()) {
+                        // render link all
+                        ?>
+                        <li>
+                            <div class="link">
+                                <a href="<?php echo get_site_url() . "?s=&$taxonomy=0"; ?>" data-name="<?php echo $taxonomy; ?>" data-value="0" class="hvr-wobble-horizontal">
+                                    <?php _e('All', 'enginethemes');?>
+                                </a>
+                            </div>
+                        </li>
+                        <?php
+                    } else {
+                        ?>
+                        <li>
+                            <div class="link">
+                                <a href="<?php echo get_post_type_archive_link('mjob_post'); ?>" data-name="<?php echo $taxonomy; ?>" data-value="0" class="hvr-wobble-horizontal">
+                                    <?php _e('All', 'enginethemes');?>
+                                </a>
+                            </div>
+                        </li>
+                        <?php
+                    }
+                }
+                foreach ($terms as $term) {
+                    // Get term link
+                    if (is_search()) {
+                        $term_link = get_site_url() . "?s=&$taxonomy=$term->term_id";
+                    } else {
+                        $term_link = get_term_link($term);
+                    }
+
+                    $current_term = get_term($current);
+                    ?>
+                    <li class="<?php echo (!is_wp_error($current_term) && $current_term->parent == $term->term_id) ? 'open active' : ''; ?>">
+                        <?php
+                        // Get child term
+                        $child_terms = get_terms($taxonomy, array('parent' => $term->term_id));
+                        ?>
+                        <div class="link">
+                            <a href="<?php echo $term_link; ?>" data-name="<?php echo $taxonomy; ?>" data-value="<?php echo $term->term_id ?>" class="<?php echo ($current == $term->term_id) ? 'active' : ''; ?> hvr-wobble-horizontal"><?php echo $term->name; ?>
+
+
+                            </a>
+                            <?php
+                            if (!empty($child_terms)):
+                                echo '<span class="show-accordion"><i class="fa fa-chevron-right"></i></span>';
+                            endif;
+                            ?>
+                        </div>
+
+                        <?php if (!empty($child_terms)) {
+                            ?>
+                            <ul class="submenu">
+                                <?php
+                                foreach ($child_terms as $child) {
+                                    // Get term link
+                                    if (is_search()) {
+                                        $term_link = get_site_url() . "?s=&$taxonomy=$child->term_id";
+                                    } else {
+                                        $term_link = get_term_link($child);
+                                    }
+
+                                    ?>
+                                    <li><a href="<?php echo $term_link; ?>" data-name="<?php echo $taxonomy; ?>" data-value="<?php echo $child->term_id; ?>" class="<?php echo ($current == $child->term_id) ? 'active' : ''; ?> hvr-wobble-horizontal"><?php echo $child->name; ?></a></li>
+                                    <?php
+                                }
+                                ?>
+                            </ul>
+                        <?php }?>
+                    </li>
+                    <?php
+                }
+                ?>
+            </ul>
+        </div>
+        <?php
+    }
+}
