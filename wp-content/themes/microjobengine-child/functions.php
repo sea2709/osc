@@ -223,7 +223,7 @@ $s3Params = [
     'bucket' => $bucket,
     'date' => $date,
     'credential' => $credential,
-    'storageClass' => 'ONEZONE_IA',
+    'storageClass' => 'STANDARD_IA',
     'url' => "https://$bucket.s3.amazonaws.com/",
     'shortdate' => date('Ymd')
 ];
