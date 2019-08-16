@@ -5,6 +5,7 @@ wp-config.php
 .user.ini
 /error_log
 phpinfo.php
+.DS_Store
 
 # Ignore the wp-content directory
 /wp-content/*
@@ -30,6 +31,12 @@ phpinfo.php
 
 # Don’t ignore sfwd-lms plugin
 !/wp-content/plugins/sfwd-lms
+
+# Don’t ignore learndash-course-grid plugin
+!/wp-content/plugins/learndash-course-grid
+
+# Don’t ignore akeebabackupwp plugin
+!/wp-content/plugins/akeebabackupwp
 
 # Don’t ignore themes dir, but ignore everything inside
 !/wp-content/themes
