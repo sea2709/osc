@@ -203,7 +203,7 @@ $policy = base64_encode(json_encode(array(
         array('x-amz-credential' => $credential),
         array('x-amz-algorithm' => 'AWS4-HMAC-SHA256'),
         array('x-amz-date' => $date),
-        array('x-amz-storage-class' => 'ONEZONE_IA')
+        array('x-amz-storage-class' => 'STANDARD_IA')
     )
 ), JSON_UNESCAPED_SLASHES));
 
