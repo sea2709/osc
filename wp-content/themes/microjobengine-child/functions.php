@@ -203,7 +203,7 @@ $policy = base64_encode(json_encode(array(
         array('x-amz-credential' => $credential),
         array('x-amz-algorithm' => 'AWS4-HMAC-SHA256'),
         array('x-amz-date' => $date),
-        array('x-amz-storage-class' => 'STANDARD_IA')
+        array('x-amz-storage-class' => 'STANDARD')
     )
 ), JSON_UNESCAPED_SLASHES));
 
@@ -223,7 +223,7 @@ $s3Params = [
     'bucket' => $bucket,
     'date' => $date,
     'credential' => $credential,
-    'storageClass' => 'STANDARD_IA',
+    'storageClass' => 'STANDARD',
     'url' => "https://$bucket.s3.amazonaws.com/",
     'shortdate' => date('Ymd')
 ];
