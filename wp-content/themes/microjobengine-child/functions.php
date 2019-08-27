@@ -179,12 +179,12 @@ function microjobengine_child_scripts_function() {
 add_action('wp_enqueue_scripts','microjobengine_child_scripts_function');
 
 // important variables that will be used throughout this example
-$bucket = 'osc.expert';
+$bucket = 'osc-website';
 
 // these can be found on your Account page, under Security Credentials > Access Keys
 $accessKeyId = 'AKIASWRYJXGBV4RQRAPG';
 $secret = 'yEF8mntMWy6f+IGUjO2/lyx0S7K0e4cQSZimR7Ew';
-$region = 'us-east-2';
+$region = 'us-east-1';
 
 $credential = $accessKeyId . '/' . date('Ymd') . '/' . $region . '/s3/aws4_request';
 $date = date('Ymd\THis\Z');
