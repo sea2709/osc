@@ -402,7 +402,7 @@ _.templateSettings = {
 
             this.isS3Upload = jQuery('#' + this.uploaderID + '_container').data('upload') == 's3';
             if (this.isS3Upload) {
-                this.s3URL = 'https://s3.us-east-2.amazonaws.com/osc.expert/attachments/' + OSC_S3.shortdate + '/' + time + '-';
+                this.s3URL = OSC_S3.url  + 'attachments/' + OSC_S3.shortdate + '/' + time + '-';
                 this.config = {
                     runtimes: 'html5,gears,flash,silverlight,browserplus,html4',
                     multiple_queues: true,
