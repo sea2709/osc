@@ -185,6 +185,7 @@ $bucket = 'osc-website';
 $accessKeyId = 'AKIASWRYJXGBV4RQRAPG';
 $secret = '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';
 $region = 'us-east-1';
+$storageClass = 'ONEZONE_IA';
 
 $credential = $accessKeyId . '/' . date('Ymd') . '/' . $region . '/s3/aws4_request';
 $date = date('Ymd\THis\Z');
@@ -203,7 +204,7 @@ $policy = base64_encode(json_encode(array(
         array('x-amz-credential' => $credential),
         array('x-amz-algorithm' => 'AWS4-HMAC-SHA256'),
         array('x-amz-date' => $date),
-        array('x-amz-storage-class' => 'ONEZONE_IA')
+        array('x-amz-storage-class' => $storageClass)
     )
 ), JSON_UNESCAPED_SLASHES));
 
@@ -223,7 +224,7 @@ $s3Params = [
     'bucket' => $bucket,
     'date' => $date,
     'credential' => $credential,
-    'storageClass' => 'STANDARD',
+    'storageClass' => $storageClass,
     'url' => "https://$bucket.s3.amazonaws.com/",
     'shortdate' => date('Ymd')
 ];
