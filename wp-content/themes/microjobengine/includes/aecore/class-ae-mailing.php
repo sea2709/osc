@@ -93,7 +93,7 @@ class AE_Mailing extends AE_Base
             'key' => $key
         ) , et_get_page_link('reset-pass'));
 
-        $activate_url = '<a href="' . $activate_url . '">' . __("Recover Link", 'enginethemes') . '</a>';
+        $activate_url = '<a style="background:#10a2ef;border-radius:45px;color:#FFFFFF;padding: 13px 16px;text-decoration: none;" href="' . $activate_url . '">' . __("Recover Link", 'enginethemes') . '</a>';
         $message = str_ireplace('[activate_url]', $activate_url, $message);
         $message = str_ireplace('[recover_url]', $activate_url, $message);
         if (is_multisite()) $blogname = $GLOBALS['current_site']->site_name;
@@ -588,7 +588,7 @@ class AE_Mailing extends AE_Base
             'key' => $key_confirm
         ) , home_url());
 
-        $confirm_link = '<a style="background:#10a2ef;border-radius:45px;color:#FFFFFF;padding: 13px 16px;" href="' . $confirm_link . '" >' . __("Confirm link", 'enginethemes') . '</a>';
+        $confirm_link = '<a style="background:#10a2ef;border-radius:45px;color:#FFFFFF;padding: 13px 16px;text-decoration: none;" href="' . $confirm_link . '" >' . __("Confirm link", 'enginethemes') . '</a>';
 
         /**
          * confirm link
