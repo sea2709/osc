@@ -588,7 +588,7 @@ class AE_Mailing extends AE_Base
             'key' => $key_confirm
         ) , home_url());
 
-        $confirm_link = '<a href="' . $confirm_link . '" >' . __("Confirm link", 'enginethemes') . '</a>';
+        $confirm_link = '<a style="background:#10a2ef;border-radius:45px;color:#FFFFFF;padding: 13px 16px;" href="' . $confirm_link . '" >' . __("Confirm link", 'enginethemes') . '</a>';
 
         /**
          * confirm link
