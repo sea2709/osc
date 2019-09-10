@@ -18,7 +18,9 @@
         <?php endif; ?>
 
 
-        <p class="post-content"><?php if($custom->short_content) echo $custom->short_content; ?> </p>
+        <p class="post-content custom-order-content" data-id="<?php echo $custom->ID ?>">
+            <?php if($custom->short_content) echo $custom->short_content; ?>
+        </p>
         <div class="outer-etd">
             <div class="deadline">
                 <p>

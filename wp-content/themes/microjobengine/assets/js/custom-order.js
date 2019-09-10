@@ -237,6 +237,7 @@
                     'click .name-customer-order': 'showCustomOrderDetail',
                     'click .custom-order-status': 'showCustomOrderDetail',
                     'click .custom-order-budget': 'showCustomOrderDetail',
+                    'click .custom-order-content': 'showCustomOrderDetail',
                     'click .btn-back-custom-order' : 'showCustomOrderDetail',
                     'click .btn-decline' : 'showDeclineForm',
                     'click .btn-reject' : 'showRejectForm',

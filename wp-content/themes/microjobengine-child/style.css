@@ -50,6 +50,6 @@ Version:        1.0.1
     text-transform: uppercase;
 }
 
-.custom-order-status, .custom-order-budget {
+.custom-order-status, .custom-order-budget, .custom-order-content {
     cursor: pointer;
 }
