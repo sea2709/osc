@@ -16,9 +16,9 @@ get_header();
 						$search_result = $wp_query->found_posts;
 
 						if($search_result == 1) {
-							printf(__('<span class="search-result-count">%s</span> <span class="search-text-result">MJOB AVAILABLE', 'enginethemes'), $search_result);
+							printf(__('<span class="search-result-count">%s</span> <span class="search-text-result">JOB AVAILABLE', 'enginethemes'), $search_result);
 						} else {
-							printf(__('<span class="search-result-count">%s</span> <span class="search-text-result">MJOBS AVAILABLE', 'enginethemes'), $search_result);
+							printf(__('<span class="search-result-count">%s</span> <span class="search-text-result">JOBS AVAILABLE', 'enginethemes'), $search_result);
 						}
 
 						?>

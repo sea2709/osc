@@ -95,7 +95,7 @@ if (!function_exists('mje_show_user_header')) {
                         <li><a href="<?php echo et_get_page_link("my-list-order"); ?>"><?php _e('My orders', 'enginethemes');?></a></li>
                         <li><a href="<?php echo et_get_page_link("my-listing-jobs"); ?>"><?php _e('My jobs', 'enginethemes');?></a></li>
                         <li><a href="<?php echo et_get_page_link("my-invoices"); ?>"><?php _e('My invoices', 'enginethemes');?></a></li>
-                        <li class="post-service-link"><a href="<?php echo et_get_page_link('post-service'); ?>"><?php _e('Post a mJob', 'enginethemes');?>
+                        <li class="post-service-link"><a href="<?php echo et_get_page_link('post-service'); ?>"><?php _e('Post a job', 'enginethemes');?>
                                 <div class="plus-circle"><i class="fa fa-plus"></i></div>
                             </a></li>
                         <li class="get-message-link">

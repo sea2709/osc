@@ -36,7 +36,7 @@ $disable_plan = disable_plan_post_mjob();
         if(! $user_ID) {
             get_template_part( 'template/post-service', 'step2' );
         } elseif( ! mje_is_user_active( $user_ID ) ) {
-            echo '<p class="not-found">' . __( 'Your account is pending.<br />Please check your email and confirm your account before posting the mJob.', 'enginethemes' ) . '</p>';
+            echo '<p class="not-found">' . __( 'Your account is pending.<br />Please check your email and confirm your account before posting the job.', 'enginethemes' ) . '</p>';
         } else {
 
             get_template_part( 'template/post-service', 'step3' );

@@ -77,7 +77,7 @@ class AE_list {
                             <li class="col-md-3 col-sm-3">'. __('Package name', 'enginethemes') .'</li>
                             <li class="col-md-2 col-sm-2">'. __('Price', 'enginethemes') .'</li>
                             <li class="col-md-2 col-sm-2">'. __('Duration', 'enginethemes') .'</li>
-                            <li class="col-md-2 col-sm-2">'. __('Number of mJob can post', 'enginethemes') .'</li>
+                            <li class="col-md-2 col-sm-2">'. __('Number of job can post', 'enginethemes') .'</li>
                             <li class="col-md-1 col-sm-1"></li>
                         </ul>
                         <div class="clearfix"></div>
