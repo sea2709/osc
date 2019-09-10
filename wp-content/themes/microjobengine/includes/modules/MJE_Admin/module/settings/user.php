@@ -253,7 +253,7 @@ if( ! function_exists('mjob_setting_user')) {
                         'desc' => __("Email templates for the authentication process. You can use placeholders to include some specific content.", 'enginethemes') . '<a class="icon btn-toggle-help payment" href="#" title="View more details"><i class="fa fa-long-arrow-down" aria-hidden="true"></i></a>' . '<div class="cont-template-help payment-setting">
                                                     <p><span>[user_login],[display_name],[user_email] :</span>' . __("user's details you want to send mail", 'enginethemes') . '<br />
                                                     <span>[dashboard] : </span>' . __("member dashboard url ", 'enginethemes') . '<br />
-                                                    <span>[title], [link], [excerpt],[desc], [author] : </span>' . __("mJob title, link, details, author", 'enginethemes') . ' <br />
+                                                    <span>[title], [link], [excerpt],[desc], [author] : </span>' . __("job title, link, details, author", 'enginethemes') . ' <br />
                                                     <span>[activate_url] : </span>' . __("activate link is require for user to renew password", 'enginethemes') . ' <br />
                                                     <span>[site_url],[blogname],[admin_email] : </span>' . __(" site info, admin email", 'enginethemes') . '
                                                     <span>[project_list] : </span>' . __("list of mJobs a buyer sends to a seller when inviting him to join", 'enginethemes') . '

@@ -210,7 +210,7 @@ if( !function_exists('ae_credit_get_user_total_balance') ){
 
 
 if(!function_exists('ae_price_format')) {
-    function ae_price_format($amount, $style = '<sup>') {
+    function ae_price_format($amount, $style = '') {
 
         $currency = ae_get_option('currency', array(
             'align' => 'left',

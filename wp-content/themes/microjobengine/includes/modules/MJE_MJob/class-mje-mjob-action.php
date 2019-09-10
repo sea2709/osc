@@ -61,7 +61,7 @@ class MJE_MJob_Action extends MJE_Post_Action
                 if(empty($request['et_budget'])) {
                     wp_send_json(array(
                         'success' => false,
-                        'msg' => __('mJob price is required', 'enginethemes')
+                        'msg' => __('Job price is required', 'enginethemes')
                     ));
                 }
 
@@ -69,7 +69,7 @@ class MJE_MJob_Action extends MJE_Post_Action
                 if($mjob_price < $min_price || $mjob_price > $max_price) {
                     wp_send_json(array(
                         'success' => false,
-                        'msg' => sprintf(__('mJob price must be between %s and %s', 'enginethemes'), mje_format_price($min_price), mje_format_price($max_price))
+                        'msg' => sprintf(__('Job price must be between %s and %s', 'enginethemes'), mje_format_price($min_price), mje_format_price($max_price))
                     ));
                 }
             }

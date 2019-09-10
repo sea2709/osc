@@ -509,7 +509,7 @@ class MJE_Mailing extends AE_Mailing
 
         $user       = get_userdata($mjob->post_author);
         $user_email = $user->user_email;
-        $subject    = __("Your mjob has been approved.", 'enginethemes');
+        $subject    = __("Your job has been approved.", 'enginethemes');
         $message    = ae_get_option('approve_mjob_mail_template');
         //send mail
         $this->wp_mail($user_email, $subject, $message, array(
