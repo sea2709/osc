@@ -629,7 +629,7 @@ class MJE_Mailing extends AE_Mailing
         $content = str_ireplace('[total]', mje_format_price( $order->amount ), $content);
         $content = str_ireplace('[currency]', $order->et_order_currency, $content);
 
-        $detail = sprintf(__('Order a mJob, visit here: %s', 'enginethemes'), $link);
+        $detail = sprintf(__('Order a job, visit here: <br />%s', 'enginethemes'), $link);
 
         // Email for checkout a custom offer
         $custom_order_id = get_post_meta($order->ID, 'custom_order_id', true);

@@ -266,7 +266,7 @@ if (!function_exists('mje_format_price')) {
 	 * @category File Functions
 	 * @author JACK BUI
 	 */
-	function mje_format_price($amount, $style = 'sup', $render_currency = true, $format_class = true) {
+	function mje_format_price($amount, $style = '', $render_currency = true, $format_class = true) {
 		$number_format_settings = mje_get_number_format_settings();
 		extract($number_format_settings);
 
@@ -296,7 +296,7 @@ if (!function_exists('mje_shorten_price')) {
 	 * @since 1.1.4
 	 * @author Tat Thien
 	 */
-	function mje_shorten_price($number, $style = 'sup') {
+	function mje_shorten_price($number, $style = '') {
 		$enable_shorten = ae_get_option('disable_long_price', 1);
 		if (!$enable_shorten) {
 			return mje_format_price($number, $style);
