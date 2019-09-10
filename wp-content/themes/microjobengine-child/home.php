@@ -107,7 +107,26 @@ if (!empty($img_url)) {
                             </li>
                             <?php
                     	}
+                        $options = AE_Options::get_instance();
+                        // save this setting to theme options
+                        $coursesLogo = $options->courses_logo;
+                        $coursesPage = get_page_by_path(get_theme_mod('courses_page'));
 
+                        if (!empty($coursesLogo) && !empty($coursesPage)) {
+                        ?>
+                            <li class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <a href="<?php echo get_page_link($coursesPage); ?>">
+                                    <div class="hvr-float-shadow">
+                                        <div class="avatar">
+                                            <img src="<?php echo $coursesLogo['large'][0]; ?>" alt="<?php _e('Courses', 'enginethemes')?>">
+                                            <div class="line"><span class="line-distance"></span></div>
+                                        </div>
+                                        <h2 class="name-items"> <?php _e('Courses', 'enginethemes')?>  </h2>
+                                    </div>
+                                </a>
+                            </li>
+                        <?php
+                        }
                     endif;?>
                 </ul>
             </div>

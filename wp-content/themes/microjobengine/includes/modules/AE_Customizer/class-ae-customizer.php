@@ -67,6 +67,29 @@ class AE_Customizer extends AE_Base
                 'height' => 50
             ),
 
+            array(
+                'setting_name' => 'courses_logo',
+                'control_id' => 'courses_logo',
+                'label' => __('Couses Logo', 'enginethemes'),
+                'section' => 'title_tagline',
+                'option_type' => 'theme_mod',
+                'field_type' => 'cropped_image',
+                'default' => '',
+                'description' => __('The optimal dimensions for your Couses Logo are 128x128 pixels.', 'enginethemes'),
+                'width' => 128,
+                'height' => 128
+            ),
+
+            array(
+                'setting_name' => 'courses_page',
+                'control_id' => 'courses_page',
+                'label' => __('Courses Page', 'enginethemes'),
+                'section' => 'title_tagline',
+                'option_type' => 'theme_mod',
+                'field_type' => 'text',
+                'default' => '',
+            ),
+
             /*******************
              * SITE COLOR      *
              *******************/
@@ -606,6 +629,11 @@ class AE_Customizer extends AE_Base
         $attach_data = et_get_attachment_data($customize_site_logo);
         ae_update_option('site_logo', $attach_data);
 
+        // Sync courses_logo
+        $customize_courses_logo = get_theme_mod('courses_logo');
+        $attach_data = et_get_attachment_data($customize_courses_logo);
+        ae_update_option('courses_logo', $attach_data);
+
         // Sync site_icon
         $customize_site_icon = get_option('site_icon');
         $attach_data = et_get_attachment_data($customize_site_icon);
@@ -650,6 +678,9 @@ class AE_Customizer extends AE_Base
                 break;
             case 'site_logo':
                 set_theme_mod('site_logo', $attach_id);
+                break;
+            case 'courses_logo':
+                set_theme_mod('courses_logo', $attach_id);
                 break;
             case 'search_background':
                 set_theme_mod('search_background', $attach_id);
