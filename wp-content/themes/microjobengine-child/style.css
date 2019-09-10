@@ -44,3 +44,12 @@ Version:        1.0.1
     right: 15px;
     text-align: center;
 }
+
+.personal-profile .link-personal ul li .contact-link {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.custom-order-status, .custom-order-budget {
+    cursor: pointer;
+}

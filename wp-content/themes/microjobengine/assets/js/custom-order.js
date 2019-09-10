@@ -235,6 +235,8 @@
                 events: {
                     'click .btn-send-offer': 'showSendOfferForm',
                     'click .name-customer-order': 'showCustomOrderDetail',
+                    'click .custom-order-status': 'showCustomOrderDetail',
+                    'click .custom-order-budget': 'showCustomOrderDetail',
                     'click .btn-back-custom-order' : 'showCustomOrderDetail',
                     'click .btn-decline' : 'showDeclineForm',
                     'click .btn-reject' : 'showRejectForm',
