@@ -1340,6 +1340,7 @@ function mje_render_attach_file_button($container_id, $text = "", $isS3Upload = 
         </span>
     </div>
     <span class="et_ajaxnonce" id="<?php echo wp_create_nonce('ad_carousels_et_uploader'); ?>"></span>
+    <div class="custom-progress" id="custom-order_progress"></div>
     <?php
 $output = ob_get_clean();
 	echo $output;

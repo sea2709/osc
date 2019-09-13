@@ -121,7 +121,7 @@ if (!empty($img_url)) {
                                             <img src="<?php echo $coursesLogo['large'][0]; ?>" alt="<?php _e('Courses', 'enginethemes')?>">
                                             <div class="line"><span class="line-distance"></span></div>
                                         </div>
-                                        <h2 class="name-items"> <?php _e('Courses', 'enginethemes')?>  </h2>
+                                        <h2 class="name-items"> <?php _e('Buy Courses', 'enginethemes')?>  </h2>
                                     </div>
                                 </a>
                             </li>
