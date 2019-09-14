@@ -344,38 +344,38 @@ class MJE_Notification_Action extends MJE_Post_Action
             case 'checkout_mjob_by_credit':
                 $amount = mje_format_price( $amount );
                 $post->noti_link = et_get_page_link( 'revenues' );
-                $post->noti_content = sprintf( __( 'You\'ve <span class="action-text">spent</span> %s credit(s) on a mJob order. ', 'enginethemes' ), $amount );
+                $post->noti_content = sprintf( __( 'You\'ve <span class="action-text">spent</span> %s credit(s) on a job order. ', 'enginethemes' ), $amount );
                 break;
             case 'new_mjob_order':
                 $post = $this->build_sender_info( $sender, $post );
                 $post->noti_link = get_the_permalink( $post_id );
                 $mjob = '<strong>' . get_the_title( $post_parent ) . '</strong>';
-                $post->noti_content = sprintf( __( '%s <span class="action-text">ordered</span> your mJob %s.', 'enginethemes' ), $post->noti_sender, $mjob );
+                $post->noti_content = sprintf( __( '%s <span class="action-text">ordered</span> your job %s.', 'enginethemes' ), $post->noti_sender, $mjob );
                 break;
             case 'review_mjob_order':
                 $post = $this->build_sender_info( $sender, $post );
                 $post->noti_link = get_the_permalink( $mjob_id ) . '#review-' . $review_id;
                 $mjob = '<strong>' . get_the_title( $mjob_id ) . '</strong>';
                 $rating = '<span class="rate-it star" data-score="' . $score . '"></span>';
-                $post->noti_content = sprintf( __( '%s <span class="action-text">accepted</span> and put %s for your delivery of mJob %s.', 'enginethemes' ), $post->noti_sender, $rating, $mjob );
+                $post->noti_content = sprintf( __( '%s <span class="action-text">accepted</span> and put %s for your delivery of job %s.', 'enginethemes' ), $post->noti_sender, $rating, $mjob );
                 break;
             case 'finish_mjob_order':
                 $post = $this->build_sender_info( $sender, $post );
                 $post->noti_link = get_the_permalink( $mjob_order_id );
                 $mjob = '<strong>' . get_the_title( $mjob_id ) . '</strong>';
-                $post->noti_content = sprintf( __( '%s <span class="action-text">accepted</span> your delivery for mJob %s', 'enginethemes' ), $post->noti_sender, $mjob );
+                $post->noti_content = sprintf( __( '%s <span class="action-text">accepted</span> your delivery for job %s', 'enginethemes' ), $post->noti_sender, $mjob );
                 break;
             case 'buyer_dispute_mjob_order':
                 $post = $this->build_sender_info( $sender, $post );
                 $post->noti_link = get_permalink( $mjob_order_id );
                 $mjob = '<strong>' . get_the_title( $mjob_id ) . '</strong>';
-                $post->noti_content = sprintf( __( '%s <span class="action-text action-text-dispute">disputed</span> your task for mJob %s', 'enginethemes' ), $post->noti_sender, $mjob );
+                $post->noti_content = sprintf( __( '%s <span class="action-text action-text-dispute">disputed</span> your task for job %s', 'enginethemes' ), $post->noti_sender, $mjob );
                 break;
             case 'seller_dispute_mjob_order':
                 $post = $this->build_sender_info( $sender, $post );
                 $post->noti_link = get_permalink( $mjob_order_id );
                 $mjob = '<strong>' . get_the_title( $mjob_id ) . '</strong>';
-                $post->noti_content = sprintf( __( '%s <span class="action-text action-text-dispute">disputed</span> your order for mJob %s', 'enginethemes' ), $post->noti_sender, $mjob );
+                $post->noti_content = sprintf( __( '%s <span class="action-text action-text-dispute">disputed</span> your order for job %s', 'enginethemes' ), $post->noti_sender, $mjob );
                 break;
             case 'resolve_mjob_order':
                 global $user_ID;
@@ -392,37 +392,37 @@ class MJE_Notification_Action extends MJE_Post_Action
                 }
 
                 if( $mjob_order->seller_id == $user_ID ) {
-                    $post->noti_content = sprintf( __( 'Admin <span class="action-text">resolved</span> your disputed task for mJob %s. %s', 'enginethemes' ), $mjob, $winner_is );
+                    $post->noti_content = sprintf( __( 'Admin <span class="action-text">resolved</span> your disputed task for job %s. %s', 'enginethemes' ), $mjob, $winner_is );
                 } else {
-                    $post->noti_content = sprintf( __( 'Admin <span class="action-text">resolved</span> your order for mJob %s. %s', 'enginethemes' ), $mjob, $winner_is );
+                    $post->noti_content = sprintf( __( 'Admin <span class="action-text">resolved</span> your order for job %s. %s', 'enginethemes' ), $mjob, $winner_is );
                 }
                 break;
             case 'start_mjob_order':
                 $post = $this->build_sender_info( $sender, $post );
                 $post->noti_link = get_the_permalink( $mjob_order_id );
                 $mjob = '<strong>' . get_the_title( $mjob_id ) . '</strong>';
-                $post->noti_content = sprintf( __( '%s has <span class="action-text">started</span> to work on your order for mJob %s.', 'enginethemes' ), $post->noti_sender, $mjob );
+                $post->noti_content = sprintf( __( '%s has <span class="action-text">started</span> to work on your order for job %s.', 'enginethemes' ), $post->noti_sender, $mjob );
                 break;
             case 'delay_mjob_order':
                 $post = $this->build_sender_info( $sender, $post );
                 $post->noti_link = get_the_permalink( $mjob_order_id );
                 $mjob = '<strong>' . get_the_title( $mjob_id ) . '</strong>';
-                $post->noti_content = sprintf( __( '%s <span class="action-text">delayed</span> your order for mJob %s.', 'enginethemes' ), $post->noti_sender, $mjob );
+                $post->noti_content = sprintf( __( '%s <span class="action-text">delayed</span> your order for job %s.', 'enginethemes' ), $post->noti_sender, $mjob );
                 break;
             case 'deliver_mjob_order':
                 $post = $this->build_sender_info( $sender, $post );
                 $post->noti_link = get_the_permalink( $mjob_order_id );
                 $mjob = '<strong>' . get_the_title( $mjob_id ) . '</strong>';
-                $post->noti_content = sprintf( __( '%s <span class="action-text">delivered</span> your order for mJob %s. Only one step to close the order, view your delivery and write a review for the seller.', 'enginethemes' ), $post->noti_sender, $mjob );
+                $post->noti_content = sprintf( __( '%s <span class="action-text">delivered</span> your order for job %s. Only one step to close the order, view your delivery and write a review for the seller.', 'enginethemes' ), $post->noti_sender, $mjob );
                 break;
             case 'admin_delete_mjob_order':
                 global $user_ID;
                 $mjob_order = mje_mjob_order_action()->get_mjob_order( $mjob_order_id );
                 $mjob = '<strong>' . get_the_title( $mjob_id ) . '</strong>';
 
-                $post->noti_content = sprintf( __( 'Admin <span class="action-text">deleted</span> your order for mJob %s. Please contact admin for further details.', 'enginethemes' ), $mjob );
+                $post->noti_content = sprintf( __( 'Admin <span class="action-text">deleted</span> your order for job %s. Please contact admin for further details.', 'enginethemes' ), $mjob );
                 if( $mjob_order->seller_id == $user_ID ) {
-                    $post->noti_content = sprintf( __( 'Admin <span class="action-text">deleted</span> your task for mJob %s. Please contact admin for further details.', 'enginethemes' ), $mjob );
+                    $post->noti_content = sprintf( __( 'Admin <span class="action-text">deleted</span> your task for jb %s. Please contact admin for further details.', 'enginethemes' ), $mjob );
                 }
                 break;
             case 'admin_restore_mjob_order':
@@ -430,44 +430,44 @@ class MJE_Notification_Action extends MJE_Post_Action
                 $mjob_order = mje_mjob_order_action()->get_mjob_order( $mjob_order_id );
                 $mjob = '<strong>' . get_the_title( $mjob_id ) . '</strong>';
                 $post->noti_link = $mjob_order->permalink;
-                $post->noti_content = sprintf( __( 'Admin <span class="action-text">restored</span> your deleted order for mJob %s.', 'enginethemes'), $mjob );
+                $post->noti_content = sprintf( __( 'Admin <span class="action-text">restored</span> your deleted order for job %s.', 'enginethemes'), $mjob );
                 if( $mjob_order->seller_id == $user_ID ) {
-                    $post->noti_content = sprintf( __( 'Admin <span class="action-text">restored</span> your deleted task for mJob %s.', 'enginethemes'), $mjob );
+                    $post->noti_content = sprintf( __( 'Admin <span class="action-text">restored</span> your deleted task for job %s.', 'enginethemes'), $mjob );
                 }
                 break;
             case 'admin_pause_mjob':
                 $post->noti_link = get_the_permalink( $mjob_id );
                 $mjob = '<strong>' . get_the_title( $mjob_id ) . '</strong>';
-                $post->noti_content = sprintf( __( 'Admin <span class="action-text">paused</span> your mJob %s', 'enginethemes'), $mjob );
+                $post->noti_content = sprintf( __( 'Admin <span class="action-text">paused</span> your job %s', 'enginethemes'), $mjob );
                 break;
             case 'admin_archive_mjob':
                 $post->noti_link = get_the_permalink( $mjob_id );
                 $mjob = '<strong>' . get_the_title( $mjob_id ) . '</strong>';
-                $post->noti_content = sprintf( __( 'Admin <span class="action-text">archived</span> your mJob %s', 'enginethemes'), $mjob );
+                $post->noti_content = sprintf( __( 'Admin <span class="action-text">archived</span> your job %s', 'enginethemes'), $mjob );
                 break;
             case 'admin_approve_mjob':
                 $post->noti_link = get_the_permalink( $mjob_id );
                 $mjob = '<strong>' . get_the_title( $mjob_id ) . '</strong>';
-                $post->noti_content = sprintf( __( 'Admin <span class="action-text">approved</span> your mJob %s', 'enginethemes'), $mjob );
+                $post->noti_content = sprintf( __( 'Admin <span class="action-text">approved</span> your job %s', 'enginethemes'), $mjob );
                 break;
             case 'admin_reject_mjob':
                 $post->noti_link = get_the_permalink( $mjob_id );
                 $mjob = '<strong>' . get_the_title( $mjob_id ) . '</strong>';
-                $post->noti_content = sprintf( __( 'Admin <span class="action-text">rejected</span> your mJob %s', 'enginethemes'), $mjob );
+                $post->noti_content = sprintf( __( 'Admin <span class="action-text">rejected</span> your job %s', 'enginethemes'), $mjob );
                 break;
             case 'admin_edit_mjob':
                 $post->noti_link = get_the_permalink( $mjob_id );
                 $mjob = '<strong>' . get_the_title( $mjob_id ) . '</strong>';
-                $post->noti_content = sprintf( __( 'Admin <span class="action-text">edited</span> your mJob %s', 'enginethemes'), $mjob );
+                $post->noti_content = sprintf( __( 'Admin <span class="action-text">edited</span> your job %s', 'enginethemes'), $mjob );
                 break;
             case 'admin_delete_mjob':
                 $mjob = '<strong>' . get_the_title( $mjob_id ) . '</strong>';
-                $post->noti_content = sprintf( __( 'Admin <span class="action-text">deleted</span> your mJob %s. Please contact admin for further details.', 'enginethemes' ), $mjob );
+                $post->noti_content = sprintf( __( 'Admin <span class="action-text">deleted</span> your job %s. Please contact admin for further details.', 'enginethemes' ), $mjob );
                 break;
             case 'admin_restore_mjob':
                 $post->noti_link = get_the_permalink( $mjob_id );
                 $mjob = '<strong>' . get_the_title( $mjob_id ) . '</strong>';
-                $post->noti_content = sprintf( __( 'Admin <span class="action-text">restored</span> your deleted mJob %s.', 'enginethemes' ), $mjob );
+                $post->noti_content = sprintf( __( 'Admin <span class="action-text">restored</span> your deleted job %s.', 'enginethemes' ), $mjob );
                 break;
             default:
                $post->noti_content = "";
