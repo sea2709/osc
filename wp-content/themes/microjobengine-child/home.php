@@ -110,7 +110,9 @@ if (!empty($img_url)) {
                         $options = AE_Options::get_instance();
                         // save this setting to theme options
                         $coursesLogo = $options->courses_logo;
-                        $coursesPage = get_page_by_path(get_theme_mod('courses_page'));
+                        if ($coursesPath = get_theme_mod('courses_page')) {
+                            $coursesPage = get_page_by_path($coursesPath);
+                        }
 
                         if (!empty($coursesLogo) && !empty($coursesPage)) {
                         ?>
@@ -122,6 +124,21 @@ if (!empty($img_url)) {
                                             <div class="line"><span class="line-distance"></span></div>
                                         </div>
                                         <h2 class="name-items"> <?php _e('Buy Courses', 'enginethemes')?>  </h2>
+                                    </div>
+                                </a>
+                            </li>
+                        <?php
+                        } else {
+
+                        ?>
+                            <li class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <a href="<?php echo get_post_type_archive_link('mjob_post'); ?>">
+                                    <div class="hvr-float-shadow">
+                                        <div class="avatar">
+                                            <img src="<?php echo get_stylesheet_directory_uri()?>/assets/img/view_all.png" alt="<?php _e('Jobs', 'enginethemes')?>">
+                                            <div class="line"><span class="line-distance"></span></div>
+                                        </div>
+                                        <h2 class="name-items"> <?php _e('View All Jobs', 'enginethemes')?>  </h2>
                                     </div>
                                 </a>
                             </li>
