@@ -26,7 +26,7 @@ class MJE_Mailing extends AE_Mailing
         $subject = sprintf(__('A new job submitted on your site', 'enginethemes'));
         $message = ae_get_option('new_mjob_mail_template');
         $message = $this->filter_post_placeholder($message, $postID);
-        $post_link = '<a style="background:#10a2ef;border-radius:45px;color:#FFFFFF;padding: 13px 16px;text-decoration: none;width:200px;text-align:center;display:inline-block;" href="' . get_permalink($postID) . '" >'. __('here', 'enginethemes') .'</a>';
+        $post_link = '<a style="background:#10a2ef;border-radius:45px;color:#FFFFFF;padding: 13px 16px;text-decoration: none;min-width:200px;text-align:center;display:inline-block;" href="' . get_permalink($postID) . '" >'. __('here', 'enginethemes') .'</a>';
         $message = str_ireplace('[here]', $post_link, $message);
         // Mail to admin
         $this->wp_mail(get_option('admin_email'), $subject, $message, array(
@@ -620,7 +620,7 @@ class MJE_Mailing extends AE_Mailing
             $subject = __('Follow these steps to complete your payment.', 'enginethemes');
             $content = ae_get_option('pay_package_by_cash');
         }
-        $link = '<a style="background:#10a2ef;border-radius:45px;color:#FFFFFF;padding: 13px 16px;text-decoration: none;width:200px;text-align:center;display:inline-block;" href="' . get_permalink($order->ID) . '">' . get_the_title($order->ID) . '</a>';
+        $link = '<a style="background:#10a2ef;border-radius:45px;color:#FFFFFF;padding: 13px 16px;text-decoration: none;min-width:200px;text-align:center;display:inline-block;" href="' . get_permalink($order->ID) . '">' . get_the_title($order->ID) . '</a>';
         $content = str_ireplace('[link]', $link, $content);
         $content = str_ireplace('[display_name]', $user->display_name, $content);
         $content = str_ireplace('[payment]', ucfirst($order->payment_type), $content);
@@ -943,7 +943,7 @@ class MJE_Mailing extends AE_Mailing
 
         // Order link
         $order_permalink = get_the_permalink($order->ID);
-        $order_link = '<a style="background:#10a2ef;border-radius:45px;color:#FFFFFF;padding: 13px 16px;text-decoration: none;width:200px;text-align:center;display:inline-block;" href="'. $order_permalink .'">'. __('View order', 'enginethemes') . '</a>';
+        $order_link = '<a style="background:#10a2ef;border-radius:45px;color:#FFFFFF;padding: 13px 16px;text-decoration: none;min-width:200px;text-align:center;display:inline-block;" href="'. $order_permalink .'">'. __('View order', 'enginethemes') . '</a>';
         $message = str_ireplace('[order_link]', $order_link, $message);
 
         return apply_filters('mje_order_placeholder', $message, $order);
