@@ -59,3 +59,6 @@ Version:        1.0.1
     right: 15px;
     text-align: center;
 }
+.mjob_conversation_detail_page .guest-message .conversation-text {
+    word-break: break-word;
+}
