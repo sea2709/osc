@@ -29,7 +29,7 @@ class customOrderAction extends AE_Base
             );
         }
 
-        $post->post_content = wpautop($post->post_content);
+        $post->post_content = wpautop(mje_filter_message_content($post->post_content));
 
         $post->post_modified = date(get_option('date_format'), strtotime($post->post_modified));
 

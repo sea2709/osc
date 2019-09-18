@@ -19,7 +19,12 @@
 
 
         <p class="post-content custom-order-content" data-id="<?php echo $custom->ID ?>">
-            <?php if($custom->short_content) echo $custom->short_content; ?>
+            <?php
+                if($custom->short_content) {
+                    $shortContent = mje_filter_message_content($custom->short_content);
+                    echo $shortContent;
+                }
+            ?>
         </p>
         <div class="outer-etd">
             <div class="deadline">
