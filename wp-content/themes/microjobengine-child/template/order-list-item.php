@@ -4,8 +4,19 @@
  */
 global $wp_query, $ae_post_factory, $post;
 $post_object    = $ae_post_factory->get('mjob_order');
-$job_object = $ae_post_factory->get('mjob_post');
 $current        = $post_object->current_post;
+$orderThumb = $current->mjob_post_thumbnail;
+if (empty($orderThumb)) {
+    $photo_default = get_template_directory_uri().'/assets/img/mjob.png';
+    if (ae_get_option('default_mjob')) {
+        $default = ae_get_option('default_mjob');
+        $defautl_thumb = $default['mjob_detail_slider'];
+        $photo_default = $defautl_thumb[0];
+    }
+
+    $orderThumb = $photo_default;
+}
+
 ?>
 <li class="order-item">
     <div class="mjob-item">
@@ -15,7 +26,7 @@ $current        = $post_object->current_post;
 
         <div class="mjob-item__image">
             <a href="<?php echo $current->permalink; ?>">
-                <img src="<?php echo (!empty($current->mjob_post_thumbnail)) ?  $current->mjob_post_thumbnail : $job_object->mje_get_thumbnail ?>" alt="<?php echo $current->post_title; ?>">
+                <img src="<?php echo $orderThumb ?>" alt="<?php echo $current->post_title; ?>">
             </a>
         </div><!-- end .mjob-item__image -->
 
