@@ -405,11 +405,12 @@ _.templateSettings = {
                 this.s3URL = OSC_S3.url  + 'attachments/' + OSC_S3.shortdate + '/' + time + '-';
                 this.config = {
                     runtimes: 'html5,gears,flash,silverlight,browserplus,html4',
-                    multiple_queues: true,
-                    multipart: true,
-                    urlstream_upload: true,
+                    // multiple_queues: true,
                     multi_selection: false,
-                    upload_later: false,
+                    multipart: true,
+                    // urlstream_upload: true,
+                    // multi_selection: false,
+                    // upload_later: false,
                     container: this.uploaderID + '_container',
                     drop_element : this.uploaderID + '_container',
                     browse_button: this.uploaderID + '_browse_button',
