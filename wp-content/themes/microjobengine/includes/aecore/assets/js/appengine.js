@@ -406,7 +406,7 @@ _.templateSettings = {
                 this.config = {
                     runtimes: 'html5,gears,flash,silverlight,browserplus,html4',
                     // multiple_queues: true,
-                    multi_selection: false,
+                    // multi_selection: false,
                     multipart: true,
                     // urlstream_upload: true,
                     // multi_selection: false,
@@ -444,6 +444,7 @@ _.templateSettings = {
                 this.options.multipart_params = {};
                 jQuery.extend(true, this.config, AE.globals.plupload_config, this.options);
                 this.config.url = OSC_S3.url;
+                this.config.multi_selection = fals
             } else {
                 this.config = {
                     runtimes: 'html5,gears,flash,silverlight,browserplus,html4',
