@@ -444,7 +444,7 @@ _.templateSettings = {
                 this.options.multipart_params = {};
                 jQuery.extend(true, this.config, AE.globals.plupload_config, this.options);
                 this.config.url = OSC_S3.url;
-                this.config.multi_selection = fals
+                this.config.multi_selection = false;
             } else {
                 this.config = {
                     runtimes: 'html5,gears,flash,silverlight,browserplus,html4',
