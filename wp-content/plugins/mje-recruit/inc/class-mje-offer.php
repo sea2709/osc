@@ -289,14 +289,14 @@ class MJE_Offer extends AE_Post_Custom{
                                     </div>
                                     <div class=" fullform-group">
                                         <button class="btn-order waves-effect waves-light btn-submit btn-save"><?php _e('Submit','mje_recruit');?></button>
-                                         <a class="btn-post-service" target="blank" href="<?php echo et_get_page_link('post-service'); ?>"><?php _e('Post a mJob', 'mje_recruit');?>
+                                         <a class="btn-post-service" target="blank" href="<?php echo et_get_page_link('post-service'); ?>"><?php _e('Post a job', 'mje_recruit');?>
                                             <div class="plus-circle"><i class="fa fa-plus"></i></div>
                                         </a>
                                     </div>
                                     <?php
 
                                 } else { ?>
-                                    <a class="btn-post-service" target="blank" href="<?php echo et_get_page_link('post-service'); ?>"><?php _e('Post a mJob', 'mje_recruit');?>
+                                    <a class="btn-post-service" target="blank" href="<?php echo et_get_page_link('post-service'); ?>"><?php _e('Post a job', 'mje_recruit');?>
                                     <div class="plus-circle"><i class="fa fa-plus"></i></div>
                                     </a>
                                 <p>&nbsp;</p>
