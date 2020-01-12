@@ -25,7 +25,7 @@ if( !function_exists( 'mje_stripe_render_button' ) ) {
                 <div class="outer-payment-items hvr-underline-from-left <?php echo $disable_class; ?>" <?php echo $tooltip; ?>>
                     <a href="#" id="stripe-gateway" class="btn-submit-price-plan" data-checkout-type="checkout_order" data-type="stripe" >
                         <img src="<?php echo MJE_STRIPE_URL . 'assets/img/card-stripe.svg'; ?>" alt="Stripe logo">
-                        <p class="text-cash"><?php _e( 'Stripe', 'mje_stripe' ); ?></p>
+                        <p class="text-cash"><?php _e( 'Credit Card', 'mje_stripe' ); ?></p>
                     </a>
                 </div>
             </li>
@@ -45,7 +45,7 @@ if( !function_exists( 'mje_stripe_render_template_in_footer' ) ) {
      * @author Tat Thien
     */
     function mje_stripe_render_template_in_footer() {
-        mje_stripe_get_template( 'payment-modal.php' );
+        mje_stripe_get_template( 'modalpayment-modal.php' );
     }
     add_action( 'wp_footer', 'mje_stripe_render_template_in_footer' );
 }

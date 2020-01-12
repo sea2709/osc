@@ -52,7 +52,19 @@ echo '<script type="text/template" id="order_single_data" >'.json_encode($curren
         <div class="container">
             <div class="row">
                 <?php if($can_not_view && !is_super_admin()): ?>
-                   <p class="not-view"><?php _e("You can't view this order!", 'enginethemes'); ?></p>
+                    <p class="not-view"><?php _e("You can't view this order!", 'enginethemes'); ?></p>
+                    <?php if (!is_user_logged_in()) : ?>
+                        <div class="text-description">
+                            <p class="title text-center">
+                                <?php
+                                    global $wp;
+                                    $current_url = home_url( add_query_arg( array(), $wp->request ) );
+                                    echo sprintf(__('Please <a href="%s">login</a> to view this order!', 'enginethemes'),
+                                        add_query_arg('redirect_to', $current_url, get_permalink(get_page_by_path('sign-in'))));
+                                ?>
+                            </p>
+                        </div>
+                    <?php endif; ?>
                 <?php else: ?>
 
                 <!-- Mjob order primary content -->
